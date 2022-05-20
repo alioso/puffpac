@@ -111,7 +111,8 @@ function init() {
     makeControls()
   }
 
-  showInfo("<a class='btn'>" + (isTouch ? "TOUCH" : "CLICK") + " TO START</a>")
+  // showInfo("<a class='btn'>" + (isTouch ? "TOUCH" : "CLICK") + " TO START</a>")
+  showInfo("<p>Want some Puff Points?</p><p>Press any key to get started</p><p> Use your keyboard arrows to play</p>")
 }
 
 function run() {
