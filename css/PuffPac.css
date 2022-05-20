@@ -1,0 +1,86 @@
+.PuffPac #container div {
+  transition: translateZ(0px);
+}
+
+.PuffPac .animation {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.PuffPac .charcontainer {
+  display: block;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  border-radius: 14px;
+}
+
+.PuffPac .info {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.PuffPac .keybutton {
+  background-color: #666666;
+  border-radius: 10px;
+  height: 92px;
+  position: absolute;
+  width: 92px;
+}
+
+.PuffPac .pip {
+  background: #000;
+  display: block;
+  left: 0px;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0px;
+}
+
+.PuffPac #container {
+  cursor: pointer;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 16px;
+  z-index: 2;
+}
+
+.PuffPac #score {
+  cursor: pointer;
+  font-size: 20px;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  margin: 20px auto;
+  margin-top: 5px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.PuffPac #info {
+  font-weight: 700;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+.PuffPac #infobg {
+  background-color: #251c18;
+  border-radius: 14px;
+}
+
+.PuffPac canvas {
+  border-radius: 16px;
+}
