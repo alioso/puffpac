@@ -1,3 +1,16 @@
+body {
+  height: calc(100vh - 469px);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 36px;
+}
+
 .PuffPac #container div {
   transition: translateZ(0px);
 }

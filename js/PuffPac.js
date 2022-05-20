@@ -54,12 +54,12 @@ assetImages["level"].src = "../assets/puffpac.png"
 
 function init() {
   // CANVAS SET UP
-  zivcontainer = document.getElementById("PuffPac")
+  puffcontainer = document.getElementById("PuffPac")
   container = document.createElement("div")
   container.id = "container"
   container.style.width = SCREEN_WIDTH + "px"
   container.style.height = SCREEN_HEIGHT + "px"
-  zivcontainer.appendChild(container)
+  puffcontainer.appendChild(container)
   container.appendChild(canvas)
   canvas.width = SCREEN_WIDTH
   canvas.height = SCREEN_HEIGHT
@@ -101,7 +101,7 @@ function init() {
   scoreContainer = document.createElement("div")
   scoreContainer.id = "score"
   scoreContainer.style.width = SCREEN_WIDTH + "px"
-  zivcontainer.appendChild(scoreContainer)
+  puffcontainer.appendChild(scoreContainer)
 
   player.init()
   ghost.init()
@@ -276,12 +276,12 @@ function onGameOver(complete) {
   var str
   if (complete) {
     str =
-      "<h1>YOU WIN!</h1><p>You get a free website!</p><p>ok, you don't really, but karma for winning</p><p><a class='btn'>" +
+      "<h1>YOU WIN!</h1><p>Here's 1000 Puff Points<p><a class='btn'>" +
       (isTouch ? "TOUCH" : "CLICK") +
       " TO PLAY AGAIN</a></p>"
   } else {
     str =
-      "<h1>GAME OVER</h1><p><a class='btn'>" +
+      "<h1>NO SNACKS FOR YOU!</h1><p><a class='btn'>" +
       (isTouch ? "TOUCH" : "CLICK") +
       " TO RESTART<span></p>"
   }
@@ -333,7 +333,7 @@ function makeControls() {
   buttons.id = "container"
   buttons.style.width = SCREEN_WIDTH + "px"
   buttons.style.height = SCREEN_HEIGHT + "px"
-  zivcontainer.appendChild(buttons)
+  puffcontainer.appendChild(buttons)
 
   var button
 
